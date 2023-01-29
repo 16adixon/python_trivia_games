@@ -252,6 +252,81 @@ if answer.lower() == "c":
 else:
     print("Incorrect! The correct answer was C\n")
 
+answer = input("""Who was the original drummer for the Melvins?
+A) Dale Crover B) Coady Willis C) Mike Dillard D) None of the above
+""")
+if answer.lower() == "c":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was C\n")
+
+answer = input("""What was the very first video released on MTV?
+A) You Better Run B) Video Killed the Radio Star C) She Won't Dance Withe Me D) You Better You Bet
+""")
+if answer.lower() == "":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was B\n")
+
+answer = input("""What was Dave Grohl's band after Nirvana?
+A) Pearl Jam B) Foo Fighters C) Nirvana D) Red Hot Chili Peppers
+""")
+if answer.lower() == "b\n":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The correct answer was B\n")
+
+answer = input("""Approximately how many artists/bands are inducted to the Rock and Roll Hall of Fame each year? 
+A) 2-3 B) 5-7 C) 9-10 D) More than 10 
+""")
+if answer.lower() == "b":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was B\n")
+
+answer = input("""In what year did Screaming Trees' bass guitarist pass away?
+A) 2021 B) 2023 C) 2017 D) 2019
+""")
+if answer.lower() == "b":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was B\n")
+
+answer = input("""Do the Red Hot Chilli Peppers have a star on Hollywood Boulevard?
+y = yes | n = no
+""")
+if answer.lower() == "y":
+    print("Correct!")
+    score += 1
+    answer = input("""In what year was the star unveiled?
+    A) 2016 B) 2011 C) 2015 D) 2012
+    """)
+    if answer.lower() == "d":
+        print("Correct!\n")
+        score += 1
+else:
+    print("Incorrect! Their star was unveiled in 2012\n")
+
+answer = input("""What album was the song Back in the USSR featured on?
+A) White Album B) Abbey Road C) Let It Be D) Revolver
+""")
+if answer.lower() == "a":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was A\n")
+
+
+
+
+
+
+
 final_score = float(score/25 * 100)
 print("You got", str(final_score) + "%", "of answers correct\n")
 if final_score <= float(59):
@@ -259,7 +334,7 @@ if final_score <= float(59):
 elif final_score <= float(89):
     print("You passed!\n")
 elif final_score <= float(99):
-    print("Good job\n")
+    print("Good job! You have aced this quiz!\n")
 else:
     print("You have mastered this quiz\n")
 
