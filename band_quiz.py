@@ -323,8 +323,23 @@ if answer33.lower() == "a":
 else:
     print("Incorrect! The correct answer was A\n")
 
+answer34 = input("""The Googoo Dolls released 'Slide' in what year?
+A) Aidan's birth year of course B) 1998 C) 2001 D) 2004
+""")
+if answer34.lower() == "b":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was B\n")
 
-
+answer35 = input("""What year did Third Eye Blind's hit 'Semi Charmed Life' release
+A) 1996 B) 2000 C) 1999 D) -1997 Okay this time it's Aidan's birth year?-1997
+""")
+if answer35.lower() == "d":
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was D\n")
 
 
 
