@@ -230,6 +230,8 @@ if answer22.lower() == "a":
     if answer23 == "Rick Allen":
         print("Correct!\n")
         score += 1
+    else:
+        print("Incorrect! The correct answer was A.\n")
 else:
     print("Incorrect. Rick Allen was able to continue drumming for Def Leppard even after losing his arm.\n")
 
@@ -344,7 +346,7 @@ else:
 
 
 
-final_score = float(score/33 * 100)
+final_score = float(score/35 * 100)
 print("You got", str(final_score) + "%", "of answers correct\n")
 if final_score <= float(59):
     print("You failed. Go listen to some music!\n")

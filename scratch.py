@@ -1,5 +1,5 @@
-import random
+def multiple_choice(question): 
+    input(f"QUESTION: {question}") #the f here stands for formatted string
 
-r = random.randint(0, 3)
-print(r)
+multiple_choice("What do I ask?\nANSWER: ")
 
