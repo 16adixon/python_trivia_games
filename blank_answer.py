@@ -1,22 +1,10 @@
-score = 0
-
-#for use with non-multiple choice 
-answer = input("______")
-if answer == "____":
+answer = input(questions[_])
+if answer == correct_answers[_]:
     print("Correct!\n")
     score += 1
 else:
-    print("Incorrect! The correct answer was __\n")
-
-#for use with multiple choice answers
-answer = input("""__________________
-A)  B)  C)  D)
-""")
-if answer.lower() == "__":
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was __\n")
+    print("Incorrect! The correct answer was", correct_answers[_])
 
 
-
+# PUT QUESTION IN LIST, FILL IN BLANKS ABOVE WITH CORRECT INDEXES
+# [0]=A [1]=B [2]=C [3]=D

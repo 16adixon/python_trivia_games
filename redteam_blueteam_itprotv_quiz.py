@@ -53,11 +53,6 @@ if answer == "network statistics":
 else:
     print("Incorrect!")
 
-answer = input("4096 MB is how many GB?")
-if answer == "4.096":
-    print("Correct!")
-else:
-    print("Incorrect!")
 
 
 print(str(score/8 *100) + "%")

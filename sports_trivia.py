@@ -2,7 +2,9 @@ print("Welcome to NFL Trivia")
 
 score = 0
 
-seahawks_punters = ["Jon Ryan", "Rick Tuten", "Michael Dickson", "Jeff Feagles", "Jeff West", "Herman Weaver", "Ruben Rodriguez", "Ryan Plackemeier", "Tom Rouen", "Rick Donnelly", "Rick Engles", "Vince Gamache", "Dave Finzer", "Donnie Jones", "Ken Walter", "Rohn Stark", "Leo Araguz", "Jimmy Colquitt", "Alex Waits", "Russ Griffith", "Kyle Richardson", "Efren Herrera", "Barry Bowman", "Josh Brown", "Frank Garcia", "Dan Doornink", "Olindo Mare"]
+seahawks_punters = [
+    "Jon Ryan", "Rick Tuten", "Michael Dickson", "Jeff Feagles", "Jeff West", "Herman Weaver", "Ruben Rodriguez", "Ryan Plackemeier", "Tom Rouen", "Rick Donnelly", "Rick Engles", "Vince Gamache", "Dave Finzer", "Donnie Jones", "Ken Walter", "Rohn Stark", "Leo Araguz", "Jimmy Colquitt", "Alex Waits", "Russ Griffith", "Kyle Richardson", "Efren Herrera", "Barry Bowman", "Josh Brown", "Frank Garcia", "Dan Doornink", "Olindo Mare"
+]
 seahawks_punters.remove("John Ryan")
 seahawks_punters.remove("Michael Dickson")
 
