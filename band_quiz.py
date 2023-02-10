@@ -118,150 +118,182 @@ A) 2021 B) 2023 C) 2017 D) 2019\n""",
 #27
 """Do the Red Hot Chilli Peppers have a star on Hollywood Boulevard? Please type your answer.
 y = yes | n = no\n""",
-
-#28
+#28 nested in 27
 """In what year was the star unveiled?
-A) 2016 B) 2011 C) 2015 D) 2022\n"""
+A) 2016 B) 2011 C) 2015 D) 2022\n""",
+
+#29 correct answer is a
+"""What album is Twisted Sister's 'I Wanna Rock' featured?
+A) Stay Hungry B) You Can't Stop Rock 'N' Roll C) The Best of the Atlantic Years D) Twisted Christmas\n
+""",
+
+#30-make list 27 club
+"""Type the full name of one artist who is a part of the infamous 27 Club.\n""",
+
+#31 correct answer is b
+"""What year did Layne Staley pass away?
+A) 2001 B) 2002 C) 2004 D) 2007\n
+""",
+
+#32 correct answer is c
+"""Who produced the album 'Blood Sugar Sex Magic' by The Red Hot Chili Peppers?
+A) Ric Ocasek B) Greg Jennings C) Rick Rubin D) Dave Grohl\n
+""",
+
+#33 correct answer is b
+"""Bryan Adam's once stopped for coffee in Pomeroy, WA. He was the opening act for which band?
+A) Bon Jovi B) Journey C) Foghat D) Lynyrd Skynyrd\n
+""",
+
+#34 correct answer is b
+"""According to The Eagles, what is the song Hotel California about?
+A) Addiction B) Nothing, just some good lyrics C) It was for a movie D) A cult\n
+"""
+
+#35
+"""Who sings 'Hold the Line'?
+A) Toto B) Deep Purple C) Judas Priest D) Dokken
+"""
 
 ]
 
 correct_answers = ["a", "b", "c", "d"]
 
 answer = input(questions[0])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[1])
-if answer == correct_answers[3]:
+if answer.lower() == correct_answers[3]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 
 answer = input(questions[2])
-if answer == correct_answers[2]:
+if answer.lower() == correct_answers[2]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[2] + "\n")
 
 answer = input(questions[3])
-if answer == correct_answers[3]:
+if answer.lower() == correct_answers[3]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 
 answer = input(questions[4])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[5])
-if answer == correct_answers[0]:
+if answer.lower() == correct_answers[0]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[0] + "\n")
 
 answer = input(questions[6])
-if answer == correct_answers[0]:
+if answer.lower() == correct_answers[0]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[0] + "\n")
 
 answer = input(questions[7])
-if answer == correct_answers[3]:
+if answer.lower() == correct_answers[3]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 
 answer = input(questions[8])
-if answer == correct_answers[3]:
+if answer.lower() == correct_answers[3]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 
 answer = input(questions[9])
-if answer == correct_answers[2]:
+if answer.lower() == correct_answers[2]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[2] + "\n")
 
 answer = input(questions[10])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[11])
-if answer == correct_answers[0]:
+if answer.lower() == correct_answers[0]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[0] + "\n")
 
 answer = input(questions[12])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[13])
-if answer == correct_answers[0]:
+if answer.lower() == correct_answers[0]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[0] + "\n")
 
 answer = input(questions[14])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[15])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[16])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[17])
-if answer == correct_answers[2]:
+if answer.lower() == correct_answers[2]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[2] + "\n")
 
 answer = input(questions[18])
-if answer == correct_answers[3]:
+if answer.lower() == correct_answers[3]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 
 answer = input(questions[19])
-if answer == correct_answers[0]:
+if answer.lower() == correct_answers[0]:
     print("Correct!\n")
     score += 1
     answer = input(questions[20])
@@ -274,53 +306,53 @@ else:
     print("Incorrect! Rick Allen was able to drum for Def Leppard even after losing his arm.\n")
 
 answer = input(questions[21])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[22])
-if answer == correct_answers[2]:
+if answer.lower() == correct_answers[2]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[2] + "\n")
 
 answer = input(questions[23])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[24])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[25])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[26])
-if answer == correct_answers[1]:
+if answer.lower() == correct_answers[1]:
     print("Correct!\n")
     score += 1
 else:
     print("Incorrect! The correct answer was", correct_answers[1] + "\n")
 
 answer = input(questions[27],)
-if answer.lower() == "yes":
+if answer.lower() == "y":
     print("Correct!\n")
     score += 1
     answer = input(questions[28])
-    if answer == correct_answers[3]:
+    if answer.lower() == correct_answers[3]:
         print("Correct!\n")
         score += 1
     else:
@@ -328,7 +360,57 @@ if answer.lower() == "yes":
 else:
     print("Incorrect! They do have a star! It was unveiled in 2022!\n")
 
-final_score = float(score/28 * 100)
+answer = input(questions[29])
+if answer.lower() == correct_answers[0]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[0] + "\n")
+
+###make a list 27 club if you want
+# answer = input(questions[30])
+# if answer == correct_answers[_]:
+#     print("Correct!\n")
+#     score += 1
+# else:
+#     print("Incorrect! The correct answer was", correct_answers[_])
+
+answer = input(questions[31])
+if answer == correct_answers[1]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[1] + "\n")
+
+answer = input(questions[32])
+if answer == correct_answers[2]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[2] + "\n")
+
+answer = input(questions[33])
+if answer == correct_answers[1]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[1] + "\n")
+
+answer = input(questions[34])
+if answer == correct_answers[1]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[1] + "\n")
+
+answer = input(questions[35])
+if answer == correct_answers[0]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[0] + "\n")
+
+final_score = float(score/35 * 100)
 print("You got", str(final_score) + "%", "of answers correct\n")
 if final_score <= float(59):
     print("You failed. Go listen to some music!\n")
