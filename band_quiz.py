@@ -13,7 +13,7 @@ questions = [
 A) Greg Wilson B) Eddie Mahoney C) Eddie Money D) None of the Above\n""",
 
 #1
-"""Who was Iron Maidnen's original singer?
+"""Who was Iron Maiden's original singer?
 A) Bill Ward B) John Elton C) Synyster Gates D) Paul DiAnno\n""",
 
 #2
@@ -21,7 +21,7 @@ A) Bill Ward B) John Elton C) Synyster Gates D) Paul DiAnno\n""",
 A) Rick Fleetwood B) Mac Fleetwood C) Mick Fleetwood D) Kenny Golladay\n""",
 
 #3
-"""What year did Black Sabath's album Masters of Reality come out?
+"""What year did Black Sabbath's album Masters of Reality come out?
 A) 1973 B) 1978 C) 1972 D) None of the Above\n""",
 
 #4
@@ -116,7 +116,7 @@ A) 2-3 B) 5-7 C) 9-10 D) More than 10\n""",
 A) 2021 B) 2023 C) 2017 D) 2019\n""",
 
 #27
-"""Do the Red Hot Chilli Peppers have a star on Hollywood Boulevard? Please type your answer.
+"""Do the Red Hot Chili Peppers have a star on Hollywood Boulevard? Please type your answer.
 y = yes | n = no\n""",
 #28 nested in 27
 """In what year was the star unveiled?
@@ -136,12 +136,15 @@ A) 2001 B) 2002 C) 2004 D) 2007\n
 """,
 
 #32 correct answer is c
-"""Who produced the album 'Blood Sugar Sex Magic' by The Red Hot Chili Peppers?
+"""Who produced the album 'Blood Sugar Sex Magic' by The Red 
+Hot Chili Peppers?
 A) Ric Ocasek B) Greg Jennings C) Rick Rubin D) Dave Grohl\n
 """,
 
 #33 correct answer is b
-"""Bryan Adam's once stopped for coffee in Pomeroy, WA. He was the opening act for which band?
+"""
+In 1983 Bryan Adams was traveling as the opening act for 
+which of the following bands
 A) Bon Jovi B) Journey C) Foghat D) Lynyrd Skynyrd\n
 """,
 
