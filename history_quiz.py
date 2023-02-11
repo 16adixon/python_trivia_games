@@ -9,16 +9,33 @@ else:
     print("FUCK YOU!")
     quit()
 
-print("Category 1: Civil War")
-answer = input("""What was the South known as during the Civil War?
-A) The Confederacy B) The Union C) The Great South D) The Bad Guys
-""")
-if answer.lower() == "a":
-    print("Correct!")
+correct_answers = ['a', 'b', 'c', 'd']
+
+questions = [
+
+#[0] correct answer is a
+"""What year did World War II end?
+A) 1945 B) 1943 C) 1948 D) 1950
+""",
+
+#[1] correct answer is d
+"""Who was the 45th President of the United States?
+A) Bill Clinton B) Barrack Obama C) George Bush Jr. D) Donald Trump
+"""
+
+]
+
+answer = input(questions[0])
+if answer.lower() == correct_answers[0]:
+    print("Correct!\n")
     score += 1
-
 else:
-    print("Incorrect! The correct answer was A")
+    print("Incorrect! The correct answer was", correct_answers[0] + "\n")
 
-
+answer = input(questions[1])
+if answer.lower() == correct_answers[3]:
+    print("Correct!\n")
+    score += 1
+else:
+    print("Incorrect! The correct answer was", correct_answers[3] + "\n")
 

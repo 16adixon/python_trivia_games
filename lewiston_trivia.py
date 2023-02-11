@@ -1,95 +1,135 @@
-print("""---------------------------
-WELCOME TO LEWISTON TRIVIA!
----------------------------
-""")
-score = 0
+from cgitb import text
+from tkinter import *
+
+
 questions = [
 
 #[0]
-"""What year was Lewiston founded?
-A) It wasn't B) 1844 C) 1901 D) 1861\n""",
+"What year was Lewiston founded?\n",
 
 #[1]
-"""Who bought out Potlatch?
-A) Vista Outdoor B) Schweitzer Engineering C) Wal Mart D) Clearwater Paper\n""",
+"Who bought out Potlatch?\n",
 
 #[2]
-"""What is the elevation of the LC Valley?
-A) 745' B) 650' C) 900' D) None of the above\n""",
+"What is the elevation of the LC Valley?\n",
 
 #[3]
-"""What is Idaho known as?
-A) The Potato State B) The Evergreen State C) The Gem State D) Nowhere to go State\n""",
+"What is Idaho known as?\n",
 
 #[4]
-"""What river runs through our valley? 
-A) The Colombia River B) The FET River C) The Snake River D) Crymea River\n""",
+"What river runs through our valley?\n",
 
 #[5]
-"""What is the population Clarkston?
-A) 30,056 B) 15,364 C) 7,194 D) 10,972\n""",
+"What is the population Clarkston?\n",
 
 #[6]
-"""What was Idaho's first capital?
-A) Nampa B) Boise C) Caldwell D) None of the above\n"""
+"What was Idaho's first capital?\n",
 
 #7 a is correct answer
-"""What was Lewiston's population in 1930? 
-A) 1,783 B) 4,532 C) 9,361 D) 11,700
-"""
+"What was Lewiston's population in 1930?\n"
 
 ]
 
-correct_answers = [ "a", "b", "c", "d"]
+options = [
+    ["It wasn't", "1844", "1901", "1861"],
+    ["Vista Outdoor", "Schweitzer Engineering", "Wal Mart", "Clearwater Paper"],
+    ["745'", "650'", "900'", "None of the above"],
+    ["The Potato State", "The Evergreen State", "The Gem State", "Nowhere to go State"],
+    ["The Colombia River", "The FET River", "The Snake River", "Crymea River"],
+    ["30,056", "15,364", "7,194", "10,972"],
+    ["Nampa", "Boise", "Caldwell", "None of the above"],
+    ["1,783", "4,532", "9,361", "11,700"]
+]
 
+answers = [4, 4, 1, 3, 3, 3, 4, 3]
 
-answer = input(questions[0])
-if answer == correct_answers[3]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[3] + "\n")
+final_score = 0
+num_questions = 8
+question_no = 1
 
-answer = input(questions[1])
-if answer == correct_answers[3]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[3] + "\n")
+def next():
+    global final_score,question_no
+    if val1.get() == 1:
+        selected_option = 1
+    elif val2.get() == 1:
+        selected_option = 2
+    elif val3.get() == 1:
+        selected_option = 3
+    elif val4.get() == 1:
+        selected_option = 4
+    else:
+        selected_option = -1
 
-answer = input(questions[2])
-if answer == correct_answers[0]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[0] + "\n")
+    if(answers[question_no-1] == selected_option):
+        final_score += 1
 
-answer = input(questions[3])
-if answer == correct_answers[2]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[2] + "\n")
+    question_no += 1
 
-answer = input(questions[4])
-if answer == correct_answers[2]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[2] + "\n")
+    if question_no > num_questions:
+        root.pack_forget()
+        score.place(relx=.45, rely=.45)
+        score.config(text = "Score:\n" + str(final_score) + " out of 8 questions correct")
 
-answer = input(questions[5])
-if answer == correct_answers[2]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! The correct answer was", correct_answers[2] + "\n")
+    else:
+        val1.set(0)
+        val2.set(0)
+        val3.set(0)
+        val4.set(0)
+        question.config(text = questions[question_no-1])
+        option1.config(text = options[question_no-1][0])
+        option2.config(text = options[question_no-1][1])
+        option3.config(text = options[question_no-1][2])
+        option4.config(text = options[question_no-1][3])
 
-answer = input(questions[6])
-if answer == correct_answers[3]:
-    print("Correct!\n")
-    score += 1
-else:
-    print("Incorrect! Lewiston was the very first capital of Idaho!")
+def check(option):
+    if(option == 1):
+        val2.set(0)
+        val3.set(0)
+        val4.set(0)
+    elif(option == 2):
+        val1.set(0)
+        val3.set(0)
+        val4.set(0)
+    elif(option == 3):
+        val1.set(0)
+        val2.set(0)
+        val4.set(0)
+    else:
+        val1.set(0)
+        val2.set(0)
+        val3.set(0)
 
-print("You got " + str(score/7 * 100) + "%", "of answers correct")
+win = Tk()
+win.title("Lewiston Trivia")
+
+root = Frame()
+root.pack()
+
+#question[0]
+question = Label(root, text=questions[0], width=60, font=(10))
+question.pack()
+
+val1 = IntVar()
+val2 = IntVar()
+val3 = IntVar()
+val4 = IntVar()
+
+option1 = Checkbutton(root, variable=val1, text=options[0][0], command=lambda:check(1))
+option1.pack()
+
+option2 = Checkbutton(root, variable=val2, text=options[0][1], command=lambda:check(2))
+option2.pack()
+
+option3 = Checkbutton(root, variable=val3, text=options[0][2], command=lambda:check(3))
+option3.pack()
+
+option4 = Checkbutton(root, variable=val4, text=options[0][3], command=lambda:check(4))
+option4.pack()
+
+next_b = Button(root, text="next", command=next)
+next_b.pack()
+
+score = Label(win)
+score.place_forget()
+
+win.mainloop()
